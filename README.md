@@ -33,7 +33,6 @@ Building small apps and prototypes
 Practicing clean code and documentation
 Sharing what I learn along the way
 
-
 🤝 Connect
 If you’re interested in my journey or want to collaborate, feel free to reach out. I’m always open to learning and connecting with others.
 
