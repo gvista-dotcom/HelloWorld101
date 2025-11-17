@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Workflow Sample</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #3498db;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    a.back-link:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>GitHub Pages Workflow Sample</h1>
+  <p>This page shows a full workflow table for managing your GitHub Pages project. Use it as a reference when editing, committing, and pushing changes.</p>
+
+  <table>
+    <tr>
+      <th>Step</th>
+      <th>Action</th>
+      <th>Where</th>
+      <th>Command / VS Code Action</th>
+      <th>Notes / Tips</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Edit files</td>
+      <td>Local VS Code</td>
+      <td>Edit HTML, JS, CSS files</td>
+      <td>Add content, pages, or scripts</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Save changes</td>
+      <td>Local VS Code</td>
+      <td>Ctrl + S or File → Save All</td>
+      <td>Always save before staging</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Stage changes</td>
+      <td>VS Code / Git Bash</td>
+      <td>VS Code: click + next to files<br>Git Bash: git add .</td>
+      <td>Stage all or individual files</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Commit changes</td>
+      <td>VS Code / Git Bash</td>
+      <td>VS Code: type message → click checkmark<br>Git Bash: git commit -m "message"</td>
+      <td>Use clear commit messages</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Push to GitHub</td>
+      <td>VS Code / Git Bash</td>
+      <td>VS Code: click push arrow<br>Git Bash: git push origin main</td>
+      <td>GitHub repo and Pages update automatically</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Check live site</td>
+      <td>Browser</td>
+      <td>Go to: https://YOUR-USERNAME.github.io/HelloWorld101/</td>
+      <td>Refresh (Ctrl + F5) if needed</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Add reusable back link</td>
+      <td>Local VS Code</td>
+      <td>Include backLink.js &lt;script&gt; at end of body</td>
+      <td>Automatically adds “Back to Home” link</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Add new pages</td>
+      <td>Local VS Code</td>
+      <td>Create new HTML → link → stage → commit → push</td>
+      <td>Repeat workflow for every new page</td>
+    </tr>
+  </table>
+
+  <a href="index.html" class="back-link">Back to Home</a>
+</body>
+</html>
