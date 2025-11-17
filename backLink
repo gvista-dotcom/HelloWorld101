@@ -1,4 +1,4 @@
-// back-link.js
+// backlink.js
 document.addEventListener("DOMContentLoaded", function() {
     // Create a paragraph element
     const backLink = document.createElement("p");
