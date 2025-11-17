@@ -9,12 +9,26 @@
 </head>
   
 <body>
-  <h1>Welcome to My First Website!</h1>
-  <p>This is my first project using GitHub and VS Code.</p>
-  <a href="GitHub101.html">Go to GitHub101 page</a>
+  <!-- OPENING SECTION -->
+  <h1>Welcome to Hello World 101!</h1>
+  <p>This is a project exploring different topics for information and learning.</p>
+  <a href="GitHub101.html">GitHub101 Learning</a>
   <p>This is for all game related page.</p>
-  <a href="HelloGame101.html">Go to Hello Game 101 page</a>
-  <p>This is for test line 0028.</p>
+  <a href="HelloGame101.html">Hello Game 101 </a>
+  
+   <!-- BACK TO HOME -->
   <script src="backLink.js"></script>
-</body>
+
+  <!-- TIMER SECTION -->
+  <p id="currentTime"></p>
+  <p id="elapsedTime">0 seconds</p>
+
+  <script>
+    const startTime = Date.now();
+    setInterval(() => {
+      document.getElementById('currentTime').textContent = "Current Time: " + new Date().toLocaleTimeString();
+      document.getElementById('elapsedTime').textContent = "Time since page loaded: " + Math.floor((Date.now() - startTime)/1000) + " seconds";
+    }, 1000);
+  </script>
+ </body>
 </html>
