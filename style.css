@@ -1,0 +1,18 @@
+/* style.css */
+
+/* Style for Back to Home links */
+.back-link {
+    display: inline-block;        /* Makes it appear like a button */
+    margin-top: 20px;             /* Space above the link */
+    padding: 8px 12px;            /* Size of button */
+    text-decoration: none;        /* Remove underline */
+    color: white;                 /* Text color */
+    background-color: #3498db;    /* Button color */
+    border-radius: 4px;           /* Rounded corners */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #2980b9;    /* Darker on hover */
+}
