@@ -24,15 +24,6 @@ Visual Sudio
 
 (More technologies will be added as I continue learning and expanding the project.)
 GAMES
-# 🎮 Pocket Games
-
-Small beginner-friendly games made with simple HTML + JavaScript.
-
-### 🐍 Snake Game  
-[Play Snake](PocketGames/Snake_Game.html)
-
-### ❌⭕ Tic Tac Toe  
-[Play Tic Tac Toe](PocketGames/TicTacToe.html)
 
 🌱 What’s Next
 This repository will evolve as I improve:
