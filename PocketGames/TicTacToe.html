@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe - HelloWorld101</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+            margin: auto;
+            width: 315px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            cursor: pointer;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+<div class="board" id="board"></div>
+<h2 id="status">Player X's turn</h2>
+
+<script>
+    const boardElement = document.getElementById("board");
+    const statusText = document.getElementById("status");
+
+    let board = ["", "", "", "", "", "", "", "", ""];
+    let currentPlayer = "X";
+    let gameActive = true;
+
+    const winConditions = [
+        [0,1,2], [3,4,5], [6,7,8],
+        [0,3,6], [1,4,7], [2,5,8],
+        [0,4,8], [2,4,6]
+    ];
+
+    function updateBoard() {
+        boardElement.innerHTML = "";
+        board.forEach((value, index) => {
+            const cell = document.createElement("div");
+            cell.classList.add("cell");
+            cell.innerText = value;
+            cell.onclick = () => makeMove(index);
+            boardElement.appendChild(cell);
+        });
+    }
+
+    function makeMove(index) {
+        if (!gameActive || board[index] !== "") return;
+
+        board[index] = currentPlayer;
+        updateBoard();
+        checkWin();
+
+        currentPlayer = currentPlayer === "X" ? "O" : "X";
+        if (gameActive) {
+            statusText.innerText = `Player ${currentPlayer}'s turn`;
+        }
+    }
+
+    function checkWin() {
+        for (const condition of winConditions) {
+            const [a, b, c] = condition;
+
+            if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+                statusText.innerText = `🎉 Player ${board[a]} wins!`;
+                gameActive = false;
+                return;
+            }
+        }
+
+        if (!board.includes("")) {
+            statusText.innerText = "It's a draw!";
+            gameActive = false;
+        }
+    }
+
+    updateBoard();
+</script>
+
+</body>
+</html>
