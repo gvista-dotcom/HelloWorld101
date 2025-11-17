@@ -1,5 +1,38 @@
-/* style.css */
+/* style.css - Standard site-wide styling */
 
+/* Set a universal font for all pages */
+body {
+    font-family: 'Arial', sans-serif;  /* Primary font */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;                       /* Dark gray text */
+    margin: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+
+
+/**********************/
 /* Style for Back to Home links */
 .back-link {
     display: inline-block;        /* Makes it appear like a button */
@@ -16,3 +49,4 @@
 .back-link:hover {
     background-color: #2980b9;    /* Darker on hover */
 }
+/**********END OF STYLE************/
