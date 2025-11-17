@@ -1,0 +1,15 @@
+// back-link.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Create a paragraph element
+    const backLink = document.createElement("p");
+
+    // Add the HTML link inside it
+    backLink.innerHTML = '<a href="index.html">Back to Home2</a>';
+
+    // Optionally, style the link
+    backLink.style.marginTop = "20px";
+    backLink.style.fontWeight = "bold";
+
+    // Append it to the end of the body
+    document.body.appendChild(backLink);
+});
