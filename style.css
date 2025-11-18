@@ -12,12 +12,16 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1, h3 {
     font-family: 'Arial', sans-serif;
     color: #2c3e50;
     font-size: 2rem;  /* scales with body font */
 }
-
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    color: #2c3e50;
+    font-size: 1rem;  /* scales with body font */
+}
 /* Paragraphs */
 p {
     margin-bottom: 15px;
@@ -32,8 +36,6 @@ a {
 a:hover {
     color: #2980b9;
 }
-
-
 
 /**********************/
 /* Style for Back to Home links */
